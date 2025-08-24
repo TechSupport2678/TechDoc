@@ -16,6 +16,9 @@ html[data-theme='dark'] {
   --ifm-background-color: #0f0f10;
   --ifm-navbar-background-color: #0f0f10;
   --ifm-footer-background-color: #0f0f10;
+  --ifm-font-color-base: #f2f2f2;
+  --ifm-color-content: #f2f2f2;
+  --ifm-link-color: #f2f2f2;
 }
 html[data-theme='dark'] body { color: #f2f2f2; }
 
@@ -24,11 +27,17 @@ html[data-theme='light'] {
   --ifm-background-color: #f7f7f8;
   --ifm-navbar-background-color: #f7f7f8;
   --ifm-footer-background-color: #f7f7f8;
+  --ifm-font-color-base: #111111;
+  --ifm-color-content: #111111;
+  --ifm-link-color: #111111;
 }
 html[data-theme='light'] body { color: #111111; }
 
 .navbar__brand img { height: 24px; }
 .markdown h1, .markdown h2, .markdown h3 { scroll-margin-top: 80px; }
+
+/* Links inherit theme link color */
+a, .menu__link, .table-of-contents__link, .breadcrumbs__link { color: var(--ifm-link-color); }
 
 /* Interactive AES card (soft B/W) */
 .aes-card {
