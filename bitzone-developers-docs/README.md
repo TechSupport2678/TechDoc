@@ -1,4 +1,4 @@
-# Bitzone Developers Docs (Docusaurus 3)
+# PandaPay Developers Docs (Docusaurus 3)
 
 ## Install
 npm i

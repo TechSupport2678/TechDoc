@@ -1,5 +1,5 @@
 ---
-title: Bitzone API
+title: PandaPay API
 description: Обзор раздела аккаунта и утилита для расшифровки данных AES‑256‑GCM (Web Crypto)
 ---
 

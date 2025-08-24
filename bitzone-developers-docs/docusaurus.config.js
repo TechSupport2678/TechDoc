@@ -30,8 +30,8 @@ const config = {
 	],
 	themeConfig: {
 		navbar: {
-			title: 'Bitzone',
-			logo: { alt: 'Bitzone', src: 'img/logo-bitzone.svg' },
+			title: 'PandaPay',
+			logo: { alt: 'PandaPay', src: 'img/logo-pandapay.svg' },
 			items: [],
 		},
 		prism: {},

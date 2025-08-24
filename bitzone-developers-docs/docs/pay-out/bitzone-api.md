@@ -1,5 +1,5 @@
 ---
-title: Bitzone API
+title: PandaPay API
 ---
 
 Pay-out API overview.
