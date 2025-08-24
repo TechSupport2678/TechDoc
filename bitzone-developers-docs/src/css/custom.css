@@ -70,3 +70,7 @@ a, .menu__link, .table-of-contents__link, .breadcrumbs__link { color: #ffffff; }
 
 /* Code block title weight */
 .codeBlockTitle_node_modules-@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module { font-weight: 600; color: #ffffff; }
+
+.aes-step { display: inline-block; font-weight: 700; margin-right: 8px; }
+.aes-helper { color: #ffffff; opacity: 0.9; }
+.aes-pre-copy { cursor: pointer; }
