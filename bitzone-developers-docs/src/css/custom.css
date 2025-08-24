@@ -1,37 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 :root {
-  --ifm-color-primary: #111111;
-  --ifm-color-primary-dark: #0f0f0f;
-  --ifm-color-primary-darker: #0d0d0d;
-  --ifm-color-primary-darkest: #0b0b0b;
-  --ifm-color-primary-light: #1a1a1a;
-  --ifm-color-primary-lighter: #222222;
-  --ifm-color-primary-lightest: #2a2a2a;
+  --ifm-color-primary: #1a1a1a;
+  --ifm-color-primary-dark: #171717;
+  --ifm-color-primary-darker: #151516;
+  --ifm-color-primary-darkest: #131315;
+  --ifm-color-primary-light: #222325;
+  --ifm-color-primary-lighter: #2a2b2e;
+  --ifm-color-primary-lightest: #323439;
   --ifm-font-family-base: 'Open Sans', Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 /* Dark: near-black background, near-white text */
 html[data-theme='dark'] {
-  --ifm-background-color: #0f0f10;
-  --ifm-navbar-background-color: #0f0f10;
-  --ifm-footer-background-color: #0f0f10;
-  --ifm-font-color-base: #f2f2f2;
-  --ifm-color-content: #f2f2f2;
-  --ifm-link-color: #f2f2f2;
+  --ifm-background-color: #131315;
+  --ifm-navbar-background-color: #131315;
+  --ifm-footer-background-color: #131315;
+  --ifm-font-color-base: #e9e9ec;
+  --ifm-color-content: #e9e9ec;
+  --ifm-link-color: #e9e9ec;
 }
-html[data-theme='dark'] body { color: #f2f2f2; }
+html[data-theme='dark'] body { color: #e9e9ec; }
 
 /* Light: near-white background, near-black text */
 html[data-theme='light'] {
-  --ifm-background-color: #f7f7f8;
-  --ifm-navbar-background-color: #f7f7f8;
-  --ifm-footer-background-color: #f7f7f8;
-  --ifm-font-color-base: #111111;
-  --ifm-color-content: #111111;
-  --ifm-link-color: #111111;
+  --ifm-background-color: #f3f3f5;
+  --ifm-navbar-background-color: #f3f3f5;
+  --ifm-footer-background-color: #f3f3f5;
+  --ifm-font-color-base: #1a1a1a;
+  --ifm-color-content: #1a1a1a;
+  --ifm-link-color: #1a1a1a;
 }
-html[data-theme='light'] body { color: #111111; }
+html[data-theme='light'] body { color: #1a1a1a; }
 
 /* Navbar logo theme-aware */
 html[data-theme='dark'] .navbar__brand img[src$="logo-pandapay.svg"] { content: url('/img/logo-pandapay.svg'); }
@@ -45,16 +45,16 @@ a, .menu__link, .table-of-contents__link, .breadcrumbs__link { color: var(--ifm-
 
 /* Interactive AES card (soft B/W) */
 .aes-card {
-  border: 1px solid #e8e8ea;
+  border: 1px solid #e1e1e4;
   border-radius: 12px;
   padding: 16px;
-  background: #121214;
+  background: #151517;
 }
 .aes-card__header { display: flex; gap: 12px; align-items: center; margin-bottom: 8px; flex-wrap: wrap; }
 .badge-interactive {
   display: inline-block;
-  background: #f2f2f2;
-  color: #121214;
+  background: #ededf0;
+  color: #151517;
   font-weight: 700;
   font-size: 12px;
   padding: 4px 8px;
@@ -65,21 +65,21 @@ a, .menu__link, .table-of-contents__link, .breadcrumbs__link { color: var(--ifm-
 .aes-label { display: grid; gap: 6px; font-size: 14px; }
 .aes-input, .aes-textarea {
   width: 100%;
-  border: 1px solid #dcdce0;
+  border: 1px solid #d7d7db;
   border-radius: 8px;
   padding: 10px 12px;
-  background: #141416;
-  color: #f3f3f5;
+  background: #161619;
+  color: #ececee;
   outline: none;
 }
 .aes-input:focus, .aes-textarea:focus { border-color: #f0f0f2; box-shadow: none; }
 .aes-actions { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
 .btn { border: 1px solid #e3e3e6; border-radius: 8px; padding: 8px 12px; cursor: pointer; font-weight: 600; }
-.btn-primary { background: #f2f2f3; color: #121214; }
+.btn-primary { background: #ececef; color: #151517; }
 .btn-primary:disabled { opacity: 0.6; cursor: not-allowed; }
-.btn-secondary { background: #121214; color: #f0f0f2; }
-.btn-ghost { background: #121214; color: #f0f0f2; border-color: transparent; }
-.aes-result { margin-top: 12px; border-radius: 8px; padding: 12px; background: #141416; border: 1px solid #e3e3e6; color: #f3f3f5; }
+.btn-secondary { background: #151517; color: #ededf0; }
+.btn-ghost { background: #151517; color: #ededf0; border-color: transparent; }
+.aes-result { margin-top: 12px; border-radius: 8px; padding: 12px; background: #161619; border: 1px solid #e3e3e6; color: #ececee; }
 .aes-result--ok { border-color: #e3e3e6; }
 .aes-result--error { border-color: #e3e3e6; }
 
@@ -98,7 +98,7 @@ html[data-theme='dark'] .table-of-contents__link:hover,
 html[data-theme='dark'] .pagination-nav__link:hover,
 html[data-theme='dark'] button:hover,
 html[data-theme='dark'] .btn:hover {
-  color: #ffffff !important;
+  color: #f6f6f7 !important;
   background-color: rgba(255,255,255,0.06);
   outline: 1px solid rgba(255,255,255,0.2);
 }
@@ -110,11 +110,26 @@ html[data-theme='light'] .table-of-contents__link:hover,
 html[data-theme='light'] .pagination-nav__link:hover,
 html[data-theme='light'] button:hover,
 html[data-theme='light'] .btn:hover {
-  color: #111111 !important;
+  color: #1a1a1a !important;
   background-color: rgba(0,0,0,0.06);
   outline: 1px solid rgba(0,0,0,0.2);
 }
 
 /* Focus visibility */
 html[data-theme='dark'] *:focus-visible { outline: 2px solid #ffffff; outline-offset: 2px; }
-html[data-theme='light'] *:focus-visible { outline: 2px solid #111111; outline-offset: 2px; }
+html[data-theme='light'] *:focus-visible { outline: 2px solid #1a1a1a; outline-offset: 2px; }
+
+/* Light theme overrides for interactive AES widget */
+html[data-theme='light'] .aes-card { background: #ffffff; border-color: #dfdfe3; }
+html[data-theme='light'] .badge-interactive { background: #151517; color: #ededf0; }
+html[data-theme='light'] .aes-hint { color: #4a4a4f; }
+html[data-theme='light'] .aes-input,
+html[data-theme='light'] .aes-textarea {
+  background: #ffffff;
+  color: #1a1a1a;
+  border-color: #cfcfd4;
+}
+html[data-theme='light'] .btn-primary { background: #151517; color: #ededf0; }
+html[data-theme='light'] .btn-secondary { background: #ececef; color: #151517; }
+html[data-theme='light'] .btn-ghost { background: transparent; color: #1a1a1a; border-color: transparent; }
+html[data-theme='light'] .aes-result { background: #ffffff; color: #1a1a1a; border-color: #e1e1e4; }
