@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "start": "docusaurus start",
+    "start:local": "docusaurus start --config docusaurus.config.local.ts",
     "build": "docusaurus build",
     "serve": "docusaurus serve",
-    "clean": "rimraf build node_modules"
+    "clean": "rimraf build node_modules .docusaurus"
   },
   "dependencies": {
     "@docusaurus/core": "3.5.2",
