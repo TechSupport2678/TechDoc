@@ -70,6 +70,7 @@ a, .menu__link, .table-of-contents__link, .breadcrumbs__link { color: var(--ifm-
   padding: 10px 12px;
   background: #161619;
   color: #ececee;
+  font-size: 16px; /* Prevent iOS zoom on focus */
   outline: none;
 }
 .aes-input:focus, .aes-textarea:focus { border-color: #f0f0f2; box-shadow: none; }
@@ -128,8 +129,15 @@ html[data-theme='light'] .aes-textarea {
   background: #ffffff;
   color: #1a1a1a;
   border-color: #cfcfd4;
+  font-size: 16px; /* Prevent iOS zoom on focus */
 }
 html[data-theme='light'] .btn-primary { background: #151517; color: #ededf0; }
 html[data-theme='light'] .btn-secondary { background: #ececef; color: #151517; }
 html[data-theme='light'] .btn-ghost { background: transparent; color: #1a1a1a; border-color: transparent; }
 html[data-theme='light'] .aes-result { background: #ffffff; color: #1a1a1a; border-color: #e1e1e4; }
+
+/* Placeholders contrast by theme */
+.aes-input::placeholder,
+.aes-textarea::placeholder { color: #b9b9bd; opacity: 1; }
+html[data-theme='light'] .aes-input::placeholder,
+html[data-theme='light'] .aes-textarea::placeholder { color: #66686d; }
