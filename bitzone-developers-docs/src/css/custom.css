@@ -141,3 +141,12 @@ html[data-theme='light'] .aes-result { background: #ffffff; color: #1a1a1a; bord
 .aes-textarea::placeholder { color: #b9b9bd; opacity: 1; }
 html[data-theme='light'] .aes-input::placeholder,
 html[data-theme='light'] .aes-textarea::placeholder { color: #66686d; }
+
+/* Tabs visibility and contrast */
+html[data-theme='dark'] .tabs__item { color: #e9e9ec; }
+html[data-theme='dark'] .tabs__item--active,
+html[data-theme='dark'] .tabs__item[aria-selected="true"] { color: #f6f6f7; background-color: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.2); }
+html[data-theme='dark'] .tabs__item:hover { color: #ffffff; background-color: rgba(255,255,255,0.06); }
+html[data-theme='light'] .tabs__item { color: #1a1a1a; }
+html[data-theme='light'] .tabs__item--active,
+html[data-theme='light'] .tabs__item[aria-selected="true"] { color: #1a1a1a; background-color: rgba(0,0,0,0.06); border-color: rgba(0,0,0,0.2); }
