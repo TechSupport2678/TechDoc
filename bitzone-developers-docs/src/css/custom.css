@@ -90,3 +90,31 @@ a, .menu__link, .table-of-contents__link, .breadcrumbs__link { color: var(--ifm-
 
 /* Code block title */
 .codeBlockTitle_node_modules-@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module { font-weight: 600; }
+
+/* Hover visibility on dark backgrounds */
+html[data-theme='dark'] a:hover,
+html[data-theme='dark'] .menu__link:hover,
+html[data-theme='dark'] .table-of-contents__link:hover,
+html[data-theme='dark'] .pagination-nav__link:hover,
+html[data-theme='dark'] button:hover,
+html[data-theme='dark'] .btn:hover {
+  color: #ffffff !important;
+  background-color: rgba(255,255,255,0.06);
+  outline: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Hover visibility on light backgrounds */
+html[data-theme='light'] a:hover,
+html[data-theme='light'] .menu__link:hover,
+html[data-theme='light'] .table-of-contents__link:hover,
+html[data-theme='light'] .pagination-nav__link:hover,
+html[data-theme='light'] button:hover,
+html[data-theme='light'] .btn:hover {
+  color: #111111 !important;
+  background-color: rgba(0,0,0,0.06);
+  outline: 1px solid rgba(0,0,0,0.2);
+}
+
+/* Focus visibility */
+html[data-theme='dark'] *:focus-visible { outline: 2px solid #ffffff; outline-offset: 2px; }
+html[data-theme='light'] *:focus-visible { outline: 2px solid #111111; outline-offset: 2px; }
