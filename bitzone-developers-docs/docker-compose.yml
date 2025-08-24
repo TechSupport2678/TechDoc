@@ -1,0 +1,24 @@
+version: "3.9"
+services:
+  techdoc:
+    build: .
+    image: techdoc:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    # For faster rebuilds during development uncomment volumes and use dev service below
+    # volumes:
+    #   - .:/app
+    #   - /app/node_modules
+
+  # Development mode (optional): live-reload with node 18
+  # dev:
+  #   image: node:18-bullseye
+  #   working_dir: /app
+  #   command: sh -c "npm install && npx docusaurus start --host 0.0.0.0"
+  #   ports:
+  #     - "3000:3000"
+  #   volumes:
+  #     - .:/app
+  #     - /app/node_modules
