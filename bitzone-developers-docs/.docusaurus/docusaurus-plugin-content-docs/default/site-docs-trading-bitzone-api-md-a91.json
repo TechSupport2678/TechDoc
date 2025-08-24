@@ -1,0 +1,26 @@
+{
+  "id": "trading/bitzone-api",
+  "title": "Bitzone API",
+  "description": "Trading API overview.",
+  "source": "@site/docs/trading/bitzone-api.md",
+  "sourceDirName": "trading",
+  "slug": "/trading/bitzone-api",
+  "permalink": "/TechDoc/trading/bitzone-api",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TechSupport2678/TechDoc/tree/main/docs/trading/bitzone-api.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Bitzone API"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Trading Flow",
+    "permalink": "/TechDoc/trading-flow"
+  },
+  "next": {
+    "title": "Get trading order by ID",
+    "permalink": "/TechDoc/trading/get-trading-order-by-id"
+  }
+}

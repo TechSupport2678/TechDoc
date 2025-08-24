@@ -1,0 +1,26 @@
+{
+  "id": "trading/returns-actual-currency-rates-for-pay-in-and-pay-out-deals",
+  "title": "Returns actual currency rates",
+  "description": "GET /v1/trading/rates",
+  "source": "@site/docs/trading/returns-actual-currency-rates-for-pay-in-and-pay-out-deals.md",
+  "sourceDirName": "trading",
+  "slug": "/trading/returns-actual-currency-rates-for-pay-in-and-pay-out-deals",
+  "permalink": "/TechDoc/trading/returns-actual-currency-rates-for-pay-in-and-pay-out-deals",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TechSupport2678/TechDoc/tree/main/docs/trading/returns-actual-currency-rates-for-pay-in-and-pay-out-deals.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Returns actual currency rates"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Returned list of available banks",
+    "permalink": "/TechDoc/trading/returned-list-of-available-banks"
+  },
+  "next": {
+    "title": "Webhook",
+    "permalink": "/TechDoc/webhook"
+  }
+}

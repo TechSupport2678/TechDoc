@@ -1,0 +1,26 @@
+{
+  "id": "pay-out/create-pay-out-order",
+  "title": "Create pay-out order",
+  "description": "POST /v1/pay-out/orders",
+  "source": "@site/docs/pay-out/create-pay-out-order.md",
+  "sourceDirName": "pay-out",
+  "slug": "/pay-out/create-pay-out-order",
+  "permalink": "/TechDoc/pay-out/create-pay-out-order",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TechSupport2678/TechDoc/tree/main/docs/pay-out/create-pay-out-order.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Create pay-out order"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Bitzone API",
+    "permalink": "/TechDoc/pay-out/bitzone-api"
+  },
+  "next": {
+    "title": "Trading Flow",
+    "permalink": "/TechDoc/trading-flow"
+  }
+}

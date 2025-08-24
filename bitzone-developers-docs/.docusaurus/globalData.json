@@ -1,0 +1,158 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/TechDoc/",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/TechDoc/",
+          "mainDocId": "introduction",
+          "docs": [
+            {
+              "id": "access-and-configuration",
+              "path": "/TechDoc/access-and-configuration",
+              "sidebar": "docs"
+            },
+            {
+              "id": "account",
+              "path": "/TechDoc/account",
+              "sidebar": "docs"
+            },
+            {
+              "id": "account/bitzone-api",
+              "path": "/TechDoc/account/bitzone-api",
+              "sidebar": "docs"
+            },
+            {
+              "id": "account/get-account-info",
+              "path": "/TechDoc/account/get-account-info",
+              "sidebar": "docs"
+            },
+            {
+              "id": "account/update-account-info",
+              "path": "/TechDoc/account/update-account-info",
+              "sidebar": "docs"
+            },
+            {
+              "id": "authentication",
+              "path": "/TechDoc/authentication",
+              "sidebar": "docs"
+            },
+            {
+              "id": "introduction",
+              "path": "/TechDoc/introduction",
+              "sidebar": "docs"
+            },
+            {
+              "id": "pay-in",
+              "path": "/TechDoc/pay-in",
+              "sidebar": "docs"
+            },
+            {
+              "id": "pay-in/bitzone-api",
+              "path": "/TechDoc/pay-in/bitzone-api",
+              "sidebar": "docs"
+            },
+            {
+              "id": "pay-in/cancel-trading-order-by-id",
+              "path": "/TechDoc/pay-in/cancel-trading-order-by-id",
+              "sidebar": "docs"
+            },
+            {
+              "id": "pay-in/dispute-canceled",
+              "path": "/TechDoc/pay-in/dispute-canceled",
+              "sidebar": "docs"
+            },
+            {
+              "id": "pay-in/dispute-successfully-initiated-a-team-will-review-the-provided-information-and-work-toward-resolution",
+              "path": "/TechDoc/pay-in/dispute-successfully-initiated-a-team-will-review-the-provided-information-and-work-toward-resolution",
+              "sidebar": "docs"
+            },
+            {
+              "id": "pay-in/invoice-was-successfully-uploaded-youll-receive-invoice-reference-key",
+              "path": "/TechDoc/pay-in/invoice-was-successfully-uploaded-youll-receive-invoice-reference-key",
+              "sidebar": "docs"
+            },
+            {
+              "id": "pay-in/the-pay-in-order-was-successfully-created-youll-receive-all-relevant-details-about-the-trade-including-i-ds-amounts-and-status",
+              "path": "/TechDoc/pay-in/the-pay-in-order-was-successfully-created-youll-receive-all-relevant-details-about-the-trade-including-i-ds-amounts-and-status",
+              "sidebar": "docs"
+            },
+            {
+              "id": "pay-out",
+              "path": "/TechDoc/pay-out",
+              "sidebar": "docs"
+            },
+            {
+              "id": "pay-out/bitzone-api",
+              "path": "/TechDoc/pay-out/bitzone-api",
+              "sidebar": "docs"
+            },
+            {
+              "id": "pay-out/create-pay-out-order",
+              "path": "/TechDoc/pay-out/create-pay-out-order",
+              "sidebar": "docs"
+            },
+            {
+              "id": "payment-page",
+              "path": "/TechDoc/payment-page",
+              "sidebar": "docs"
+            },
+            {
+              "id": "trading-flow",
+              "path": "/TechDoc/trading-flow",
+              "sidebar": "docs"
+            },
+            {
+              "id": "trading/bitzone-api",
+              "path": "/TechDoc/trading/bitzone-api",
+              "sidebar": "docs"
+            },
+            {
+              "id": "trading/get-trading-order-by-id",
+              "path": "/TechDoc/trading/get-trading-order-by-id",
+              "sidebar": "docs"
+            },
+            {
+              "id": "trading/get-trading-order-by-merchant-order-id",
+              "path": "/TechDoc/trading/get-trading-order-by-merchant-order-id",
+              "sidebar": "docs"
+            },
+            {
+              "id": "trading/get-trading-orders",
+              "path": "/TechDoc/trading/get-trading-orders",
+              "sidebar": "docs"
+            },
+            {
+              "id": "trading/returned-list-of-available-banks",
+              "path": "/TechDoc/trading/returned-list-of-available-banks",
+              "sidebar": "docs"
+            },
+            {
+              "id": "trading/returns-actual-currency-rates-for-pay-in-and-pay-out-deals",
+              "path": "/TechDoc/trading/returns-actual-currency-rates-for-pay-in-and-pay-out-deals",
+              "sidebar": "docs"
+            },
+            {
+              "id": "webhook",
+              "path": "/TechDoc/webhook",
+              "sidebar": "docs"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "docs": {
+              "link": {
+                "path": "/TechDoc/introduction",
+                "label": "introduction"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

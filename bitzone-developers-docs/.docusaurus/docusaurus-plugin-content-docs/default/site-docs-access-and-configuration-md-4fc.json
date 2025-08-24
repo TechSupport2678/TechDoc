@@ -1,0 +1,36 @@
+{
+  "id": "access-and-configuration",
+  "title": "Access and Configuration",
+  "description": "Describe account access, environment setup, and API keys here.",
+  "source": "@site/docs/access-and-configuration.md",
+  "sourceDirName": ".",
+  "slug": "/access-and-configuration",
+  "permalink": "/TechDoc/access-and-configuration",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TechSupport2678/TechDoc/tree/main/docs/access-and-configuration.md",
+  "tags": [
+    {
+      "inline": true,
+      "label": "configuration",
+      "permalink": "/TechDoc/tags/configuration"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "id": "access-and-configuration",
+    "title": "Access and Configuration",
+    "tags": [
+      "configuration"
+    ]
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/TechDoc/introduction"
+  },
+  "next": {
+    "title": "API Integration",
+    "permalink": "/TechDoc/authentication"
+  }
+}

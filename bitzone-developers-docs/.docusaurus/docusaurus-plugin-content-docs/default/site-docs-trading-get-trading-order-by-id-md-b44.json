@@ -1,0 +1,26 @@
+{
+  "id": "trading/get-trading-order-by-id",
+  "title": "Get trading order by ID",
+  "description": "GET /v1/trading/orders/",
+  "source": "@site/docs/trading/get-trading-order-by-id.md",
+  "sourceDirName": "trading",
+  "slug": "/trading/get-trading-order-by-id",
+  "permalink": "/TechDoc/trading/get-trading-order-by-id",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TechSupport2678/TechDoc/tree/main/docs/trading/get-trading-order-by-id.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Get trading order by ID"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Bitzone API",
+    "permalink": "/TechDoc/trading/bitzone-api"
+  },
+  "next": {
+    "title": "Get trading order by merchant order ID",
+    "permalink": "/TechDoc/trading/get-trading-order-by-merchant-order-id"
+  }
+}

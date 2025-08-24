@@ -24,7 +24,7 @@ const config: Config = {
             'https://github.com/TechSupport2678/TechDoc/tree/main/',
         },
         blog: false,
-        theme: { customCss: [] },
+        theme: { customCss: 'src/css/custom.css' },
         sitemap: { changefreq: 'weekly', priority: 0.5 },
       },
     ],

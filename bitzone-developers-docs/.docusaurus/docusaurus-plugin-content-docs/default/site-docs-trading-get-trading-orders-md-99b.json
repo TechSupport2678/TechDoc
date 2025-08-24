@@ -1,0 +1,26 @@
+{
+  "id": "trading/get-trading-orders",
+  "title": "Get trading orders",
+  "description": "GET /v1/trading/orders",
+  "source": "@site/docs/trading/get-trading-orders.md",
+  "sourceDirName": "trading",
+  "slug": "/trading/get-trading-orders",
+  "permalink": "/TechDoc/trading/get-trading-orders",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TechSupport2678/TechDoc/tree/main/docs/trading/get-trading-orders.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Get trading orders"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get trading order by merchant order ID",
+    "permalink": "/TechDoc/trading/get-trading-order-by-merchant-order-id"
+  },
+  "next": {
+    "title": "Returned list of available banks",
+    "permalink": "/TechDoc/trading/returned-list-of-available-banks"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "pay-in",
+  "title": "Pay-in",
+  "description": "Pay-in section index.",
+  "source": "@site/docs/pay-in.md",
+  "sourceDirName": ".",
+  "slug": "/pay-in",
+  "permalink": "/TechDoc/pay-in",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/TechSupport2678/TechDoc/tree/main/docs/pay-in.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "pay-in",
+    "title": "Pay-in"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Update account info",
+    "permalink": "/TechDoc/account/update-account-info"
+  },
+  "next": {
+    "title": "Bitzone API",
+    "permalink": "/TechDoc/pay-in/bitzone-api"
+  }
+}
