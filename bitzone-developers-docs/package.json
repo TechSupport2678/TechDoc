@@ -7,6 +7,7 @@
     "start:local": "docusaurus start --config docusaurus.config.js",
     "build": "docusaurus build",
     "serve": "docusaurus serve",
+    "serve:auth": "node server.js",
     "clean": "rimraf build node_modules .docusaurus"
   },
   "dependencies": {
