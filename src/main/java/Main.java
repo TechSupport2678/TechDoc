@@ -13,6 +13,14 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("Введите логин: ");
+        String login = br.readLine();
+        System.out.print("Введите пароль: ");
+        String password = br.readLine();
+        if (!"admin".equals(login) || !"admin".equals(password)) {
+            System.out.println("Доступ запрещен");
+            return;
+        }
         System.out.print("Введите ИНН: ");
         String inn = br.readLine();
         System.out.print("Введите КПП: ");
