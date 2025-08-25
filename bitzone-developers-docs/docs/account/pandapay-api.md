@@ -1,6 +1,7 @@
 ---
 title: PandaPay API
 description: Обзор раздела аккаунта и утилита для расшифровки данных AES‑256‑GCM (Web Crypto)
+slug: /account/pandapay-api
 ---
 
 import AesGcmDecryptor from '@site/src/components/AesGcmDecryptor';
@@ -16,9 +17,9 @@ import TabItem from '@theme/TabItem';
 - Тестовые и прод‑окружения
 - Примеры запросов и ответов
 
-:::note
+::::note
 Полный список конечных точек смотрите в навигации слева. Ниже — утилита для расшифровки полезной нагрузки с использованием AES‑256‑GCM в браузере.
-:::
+::::
 
 ## Схема полезной нагрузки (пример)
 
@@ -51,10 +52,10 @@ base64( [12 байт nonce] + [ciphertext] + [16 байт GCM tag] )
 2. Вставьте Base64 шифротекст в формате `nonce(12B) + cipher + tag(16B)`.
 3. Нажмите «Декодировать» — результат появится ниже.
 
-:::caution Безопасность
+::::caution Безопасность
 - Не используйте реальные прод‑ключи на общих/чужих устройствах.
 - Храните ключи в KMS/SSM/Secrets Manager и подгружайте их только на серверной стороне, если это не тест.
-:::
+::::
 
 <AesGcmDecryptor />
 
@@ -235,3 +236,4 @@ public static class AesGcmUtil {
 - Руководство по авторизации: см. раздел «API Integration»
 - Web Crypto API (MDN): https://developer.mozilla.org/docs/Web/API/SubtleCrypto/decrypt
 - Рекомендации по хранению ключей: NIST SP 800‑57
+
