@@ -11,7 +11,7 @@ const sidebars = {
 			link: { type: 'doc', id: 'authentication' },
 			items: [
 				{ type: 'doc', id: 'account' },
-				'account/bitzone-api',
+				'account/pandapay-api',
 				'account/get-account-info',
 				'account/update-account-info',
 				{ type: 'doc', id: 'pay-in' },
