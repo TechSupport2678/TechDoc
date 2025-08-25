@@ -5,7 +5,7 @@ const sidebars = {
 	docs: [
 		'introduction',
 		'access-and-configuration',
-		'login',
+		'authorization',
 		{
 			type: 'category',
 			label: 'API Integration',

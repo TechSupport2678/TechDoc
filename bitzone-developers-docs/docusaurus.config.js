@@ -32,7 +32,7 @@ const config = {
 		navbar: {
 			logo: { alt: 'PandaPay', src: 'img/logo-pandapay.svg' },
 			items: [
-				{ to: '/login', label: 'Авторизация', position: 'right' },
+				{ to: '/authorization', label: 'Авторизация', position: 'right' },
 			],
 		},
 		prism: {},

@@ -155,6 +155,9 @@ function serveStatic(req, res, urlPath) {
 
 const server = http.createServer((req, res) => {
   const url = new URL(req.url, `http://${req.headers.host}`);
+  if (url.pathname === '/authorization') {
+    return serveStatic(req, res, url.pathname);
+  }
   if (url.pathname === '/login') {
     if (req.method === 'GET') return serveLogin(req, res);
     if (req.method === 'POST') {
@@ -176,7 +179,7 @@ const server = http.createServer((req, res) => {
   }
 
   if (!isAuthenticated(req)) {
-    return redirect(res, '/login');
+    return redirect(res, '/authorization');
   }
 
   return serveStatic(req, res, url.pathname);
