@@ -1,6 +1,6 @@
 ---
-title: PandaPay API
-slug: /pay-in/pandapay-api
+title: Pay-in API
+slug: /pay-in/api
 ---
 
 Pay-in API overview.

@@ -1,4 +1,4 @@
-# PandaPay Developers Docs (Docusaurus 3)
+# Developers Docs (Docusaurus 3)
 
 ## Install
 npm i

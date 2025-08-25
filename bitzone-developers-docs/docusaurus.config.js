@@ -30,7 +30,7 @@ const config = {
 	],
 	themeConfig: {
 		navbar: {
-			logo: { alt: 'PandaPay', src: 'img/logo-pandapay.svg' },
+			logo: { alt: 'Developers', src: 'img/logo.svg' },
 			items: [
 				{ to: '/authorization', label: 'Авторизация', position: 'right' },
 			],

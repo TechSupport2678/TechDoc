@@ -1,6 +1,6 @@
 ---
-title: PandaPay API
-slug: /trading/pandapay-api
+title: Trading API
+slug: /trading/api
 ---
 
 Trading API overview.

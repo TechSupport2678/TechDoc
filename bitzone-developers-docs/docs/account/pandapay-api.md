@@ -1,7 +1,7 @@
 ---
-title: PandaPay API
+title: API Overview
 description: Обзор раздела аккаунта и утилита для расшифровки данных AES‑256‑GCM (Web Crypto)
-slug: /account/pandapay-api
+slug: /account/api
 ---
 
 import AesGcmDecryptor from '@site/src/components/AesGcmDecryptor';
