@@ -31,7 +31,9 @@ const config = {
 	themeConfig: {
 		navbar: {
 			logo: { alt: 'PandaPay', src: 'img/logo-pandapay.svg' },
-			items: [],
+			items: [
+				{ to: '/login', label: 'Авторизация', position: 'right' },
+			],
 		},
 		prism: {},
 		colorMode: { defaultMode: 'dark', respectPrefersColorScheme: false },
