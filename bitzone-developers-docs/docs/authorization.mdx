@@ -9,6 +9,13 @@ import React, { useState } from 'react';
 export const SESSION_COOKIE = 'DOCS_SESSION';
 export const SESSION_VALUE = 'ok';
 
+export function logout() {
+  try { document.cookie = SESSION_COOKIE + '=; Path=/; Max-Age=0'; } catch (e) {}
+  const base = (window.__docusaurus && window.__docusaurus.baseUrl) || '/TechDoc/';
+  const b = base.endsWith('/') ? base : base + '/';
+  window.location.replace(window.location.origin + b + 'authorization');
+}
+
 export function AuthForm() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -33,6 +40,7 @@ export function AuthForm() {
       <label htmlFor="password">Пароль</label>
       <input id="password" type="password" value={password} onChange={(e)=>setPassword(e.target.value)} required />
       <button type="submit">Войти</button>
+      <button type="button" className="btn-logout" onClick={logout}>Выйти</button>
       <div className="auth-hint">По умолчанию: admin / admin</div>
     </form>
   );
@@ -43,6 +51,7 @@ export function AuthForm() {
 .auth-card{max-width:420px;padding:16px;border:1px solid var(--ifm-toc-border-color);border-radius:10px}
 .auth-card input{width:100%;padding:10px;border-radius:8px;margin:6px 0}
 .auth-card button{margin-top:12px;padding:10px 14px;border-radius:8px}
+.auth-card .btn-logout{margin-left:8px;background:#35363a;color:#fff}
 .auth-error{color:#dc2626}
 .auth-hint{margin-top:8px;opacity:.8;font-size:12px}
 `}
