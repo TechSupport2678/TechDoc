@@ -28,11 +28,12 @@ export default function Root({ children }) {
 		if (typeof window === 'undefined') return;
 		const baseUrl = getBaseUrlWithHook();
 		const authPath = baseUrl + 'authorization';
+		const absAuth = window.location.origin + authPath;
 		const pathname = window.location.pathname || '/';
 		const isAuthPage = pathname.endsWith('/authorization') || pathname.endsWith('/authorization/');
 		const authed = hasSessionCookie();
 		if (!authed && !isAuthPage) {
-			window.location.replace(authPath);
+			window.location.replace(absAuth);
 		}
 	}, [location]);
 

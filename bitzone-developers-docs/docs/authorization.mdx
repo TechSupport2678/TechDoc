@@ -18,7 +18,7 @@ export function AuthForm() {
     e.preventDefault();
     if (username === 'admin' && password === 'admin') {
       document.cookie = SESSION_COOKIE + '=' + SESSION_VALUE + '; SameSite=Lax; Path=/; Max-Age=86400';
-      window.location.replace('/');
+      window.location.replace((window.__docusaurus?.baseUrl || '/TechDoc/') );
       return;
     }
     setError('Неверный логин или пароль');
