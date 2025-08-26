@@ -29,13 +29,13 @@ const config = {
 		],
 	],
 	themeConfig: {
-		navbar: {
-			logo: { alt: 'Developers', src: 'img/logo.svg' },
-			items: [
-				{ to: '/authorization', label: 'Авторизация', position: 'right' },
-			],
-		},
-		prism: {},
+					navbar: {
+				logo: { alt: 'Developers', src: 'img/logo.svg' },
+				items: [
+					{ type: 'doc', docId: 'authorization', label: 'Авторизация', position: 'right' },
+				],
+			},
+prism: {},
 		colorMode: { defaultMode: 'dark', respectPrefersColorScheme: false },
 	},
 };

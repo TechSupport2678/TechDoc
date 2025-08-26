@@ -27,9 +27,9 @@ export default function Root({ children }) {
 	useEffect(() => {
 		if (typeof window === 'undefined') return;
 		const baseUrl = getBaseUrlWithHook();
-		const pathname = location?.pathname || '/';
 		const authPath = baseUrl + 'authorization';
-		const isAuthPage = pathname === authPath || pathname === authPath + '/';
+		const pathname = window.location.pathname || '/';
+		const isAuthPage = pathname.endsWith('/authorization') || pathname.endsWith('/authorization/');
 		const authed = hasSessionCookie();
 		if (!authed && !isAuthPage) {
 			window.location.replace(authPath);
