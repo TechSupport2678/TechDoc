@@ -37,6 +37,15 @@ html[data-theme='light'] body { color: #232528; }
 html[data-theme='dark'] .navbar__brand img[src$="logo.svg"] { content: url('/img/logo.svg'); }
 html[data-theme='light'] .navbar__brand img[src$="logo.svg"] { content: url('/img/logo-black.svg'); }
 
+/* Hide chrome when not authenticated */
+.auth-only .navbar,
+.auth-only .menu,
+.auth-only .footer,
+.auth-only .breadcrumbs,
+.auth-only .table-of-contents,
+.auth-only .theme-doc-sidebar-container { display:none !important; }
+.auth-only .main-wrapper { margin: 0 !important; }
+
 .navbar__brand img { height: 24px; }
 .markdown h1, .markdown h2, .markdown h3 { scroll-margin-top: 80px; }
 

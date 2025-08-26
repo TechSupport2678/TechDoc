@@ -29,6 +29,11 @@ export default function Root({ children }) {
 		if (!authed && !isAuthPage) {
 			window.location.replace(absAuth);
 		}
+		// Toggle auth-only layout (hide navbar/sidebar/footer) while not authenticated
+		try {
+			if (!authed) document.body.classList.add('auth-only');
+			else document.body.classList.remove('auth-only');
+		} catch (_) {}
 	}, [location]);
 
 	return <>{children}</>;
