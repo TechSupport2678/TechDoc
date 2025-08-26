@@ -1,19 +1,13 @@
 import React, { useEffect } from 'react';
 import { useLocation } from '@docusaurus/router';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const SESSION_COOKIE = 'DOCS_SESSION';
 const SESSION_VALUE = 'ok';
 
-function getBaseUrlWithHook() {
-	try {
-		const resolved = useBaseUrl('/');
-		return resolved.endsWith('/') ? resolved : resolved + '/';
-	} catch (_) {
-		if (typeof window === 'undefined') return '/';
-		const base = (window.__docusaurus && window.__docusaurus.baseUrl) || '/';
-		return base.endsWith('/') ? base : base + '/';
-	}
+function getBaseUrlFromWindow() {
+	if (typeof window === 'undefined') return '/';
+	const base = (window.__docusaurus && window.__docusaurus.baseUrl) || '/';
+	return base.endsWith('/') ? base : base + '/';
 }
 
 function hasSessionCookie() {
@@ -26,7 +20,7 @@ export default function Root({ children }) {
 
 	useEffect(() => {
 		if (typeof window === 'undefined') return;
-		const baseUrl = getBaseUrlWithHook();
+		const baseUrl = getBaseUrlFromWindow();
 		const authPath = baseUrl + 'authorization';
 		const absAuth = window.location.origin + authPath;
 		const pathname = window.location.pathname || '/';
