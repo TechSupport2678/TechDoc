@@ -27,7 +27,6 @@ export default function AuthLogin() {
 			<label htmlFor="password" style={{display:'block',marginTop:10}}>Пароль</label>
 			<input id="password" type="password" value={password} onChange={(e)=>setPassword(e.target.value)} required style={{width:'100%',padding:'10px',borderRadius:8}} />
 			<button type="submit" style={{marginTop:12,padding:'10px 14px',borderRadius:8}}>Войти</button>
-			<div style={{marginTop:8,opacity:.8,fontSize:12}}>По умолчанию: admin / admin</div>
 		</form>
 	);
 }

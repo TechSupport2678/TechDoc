@@ -84,7 +84,6 @@ function serveLogin(req, res, errorMsg) {
     <label for="password">Пароль</label>
     <input id="password" type="password" name="password" required/>
     <button type="submit">Войти</button>
-    <div class="muted">По умолчанию: admin / admin</div>
   </form>
  </body>
 </html>`;
