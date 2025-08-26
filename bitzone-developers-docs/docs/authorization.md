@@ -4,22 +4,38 @@ title: Авторизация
 description: Доступ к порталу документации
 ---
 
-Для доступа к разделам документации выполните вход. Введите логин и пароль ниже. 
+import React, { useState } from 'react';
 
-<form method="post" action="/login">
-  <div style={{maxWidth:'420px',padding:'16px',border:'1px solid var(--ifm-toc-border-color)',borderRadius:'10px'}}>
-    <div style={{marginBottom:'10px'}}>
-      <label htmlFor="username" style={{display:'block',marginBottom:4}}>Логин</label>
-      <input id="username" name="username" required style={{width:'100%',padding:'10px',borderRadius:8}} />
-    </div>
-    <div style={{marginBottom:'10px'}}>
-      <label htmlFor="password" style={{display:'block',marginBottom:4}}>Пароль</label>
-      <input id="password" type="password" name="password" required style={{width:'100%',padding:'10px',borderRadius:8}} />
-    </div>
-    <button type="submit" style={{padding:'10px 14px',borderRadius:8}}>Войти</button>
-    <div style={{marginTop:8,opacity:.8,fontSize:12}}>По умолчанию: admin / admin</div>
-  </div>
-</form>
+const SESSION_COOKIE = 'DOCS_SESSION';
+const SESSION_VALUE = 'ok';
 
-Подсказка: если видите редирект на эту страницу — значит, вход ещё не выполнен.
+function AuthForm() {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState(null);
 
+  function onSubmit(e) {
+    e.preventDefault();
+    if (username === 'admin' && password === 'admin') {
+      document.cookie = `${SESSION_COOKIE}=${SESSION_VALUE}; SameSite=Lax; Path=/; Max-Age=86400`;
+      window.location.replace('/');
+      return;
+    }
+    setError('Неверный логин или пароль');
+  }
+
+  return (
+    <form onSubmit={onSubmit} style={{maxWidth:'420px',padding:'16px',border:'1px solid var(--ifm-toc-border-color)',borderRadius:10}}>
+      <h2>Авторизация</h2>
+      {error && <p style={{color:'#dc2626'}}>{error}</p>}
+      <label htmlFor="username" style={{display:'block',marginTop:10}}>Логин</label>
+      <input id="username" value={username} onChange={(e)=>setUsername(e.target.value)} required style={{width:'100%',padding:'10px',borderRadius:8}} />
+      <label htmlFor="password" style={{display:'block',marginTop:10}}>Пароль</label>
+      <input id="password" type="password" value={password} onChange={(e)=>setPassword(e.target.value)} required style={{width:'100%',padding:'10px',borderRadius:8}} />
+      <button type="submit" style={{marginTop:12,padding:'10px 14px',borderRadius:8}}>Войти</button>
+      <div style={{marginTop:8,opacity:.8,fontSize:12}}>По умолчанию: admin / admin</div>
+    </form>
+  );
+}
+
+<AuthForm />
