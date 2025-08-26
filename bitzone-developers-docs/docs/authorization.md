@@ -17,7 +17,7 @@ function AuthForm() {
   function onSubmit(e) {
     e.preventDefault();
     if (username === 'admin' && password === 'admin') {
-      document.cookie = `${SESSION_COOKIE}=${SESSION_VALUE}; SameSite=Lax; Path=/; Max-Age=86400`;
+      document.cookie = SESSION_COOKIE + '=' + SESSION_VALUE + '; SameSite=Lax; Path=/; Max-Age=86400';
       window.location.replace('/');
       return;
     }
