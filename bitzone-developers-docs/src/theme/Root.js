@@ -21,7 +21,7 @@ export default function Root({ children }) {
 	useEffect(() => {
 		if (typeof window === 'undefined') return;
 		const baseUrl = getBaseUrlFromWindow();
-		const authPath = baseUrl + 'authorization';
+		const authPath = baseUrl + 'authorization/';
 		const absAuth = window.location.origin + authPath;
 		const pathname = window.location.pathname || '/';
 		const isAuthPage = pathname.endsWith('/authorization') || pathname.endsWith('/authorization/');
