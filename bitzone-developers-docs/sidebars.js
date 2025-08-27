@@ -12,6 +12,7 @@ const sidebars = {
 			link: { type: 'doc', id: 'authentication' },
 			items: [
 				{ type: 'doc', id: 'account' },
+				'account/db',
 				'account/api',
 				'account/get-account-info',
 				'account/update-account-info',

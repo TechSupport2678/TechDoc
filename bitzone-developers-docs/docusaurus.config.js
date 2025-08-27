@@ -28,14 +28,14 @@ const config = {
 			},
 		],
 	],
+	markdown: { mermaid: true },
+	themes: ['@docusaurus/theme-mermaid'],
 	themeConfig: {
-					navbar: {
-				logo: { alt: 'Developers', src: 'img/logo.svg' },
-				items: [
-					{ type: 'doc', docId: 'authorization', label: 'Авторизация', position: 'right' },
-				],
-			},
-prism: {},
+		navbar: {
+			logo: { alt: 'PandaPay', src: 'img/logo.svg' },
+			items: [],
+		},
+		prism: {},
 		colorMode: { defaultMode: 'dark', respectPrefersColorScheme: false },
 	},
 };
