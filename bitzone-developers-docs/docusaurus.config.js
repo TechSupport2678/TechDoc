@@ -33,7 +33,9 @@ const config = {
 	themeConfig: {
 		navbar: {
 			logo: { alt: 'PandaPay', src: 'img/logo.svg' },
-			items: [],
+			items: [
+				{ type: 'docSidebar', sidebarId: 'docs', position: 'left', label: 'Docs' },
+			],
 		},
 		prism: {},
 		colorMode: { defaultMode: 'dark', respectPrefersColorScheme: false },
