@@ -8,6 +8,12 @@ export default function AuthLogin() {
 	const [password, setPassword] = useState('');
 	const [error, setError] = useState<string | null>(null);
 
+	function getBaseUrlFromWindow() {
+		if (typeof window === 'undefined') return '/';
+		const base = (window as any).__docusaurus?.baseUrl || '/';
+		return base.endsWith('/') ? base : base + '/';
+	}
+
 	function onSubmit(e: React.FormEvent) {
 		e.preventDefault();
 		if (username === 'admin' && password === 'admin') {
@@ -16,6 +22,12 @@ export default function AuthLogin() {
 			return;
 		}
 		setError('Неверный логин или пароль');
+		try {
+			const base = getBaseUrlFromWindow();
+			const authPath = base + 'authorization';
+			const isAuthPage = (window.location.pathname || '').endsWith('/authorization') || (window.location.pathname || '').endsWith('/authorization/');
+			if (!isAuthPage) window.location.replace(authPath);
+		} catch {}
 	}
 
 	return (
