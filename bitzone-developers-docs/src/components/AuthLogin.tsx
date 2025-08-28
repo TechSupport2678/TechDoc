@@ -18,15 +18,18 @@ export default function AuthLogin() {
 		e.preventDefault();
 		if (username === 'admin' && password === 'admin') {
 			document.cookie = `${SESSION_COOKIE}=${SESSION_VALUE}; SameSite=Lax; Path=/; Max-Age=86400`;
-			window.location.replace('/');
+			const base = getBaseUrlFromWindow();
+			const absHome = (typeof window !== 'undefined' ? window.location.origin : '') + base;
+			window.location.replace(absHome);
 			return;
 		}
 		setError('Неверный логин или пароль');
 		try {
 			const base = getBaseUrlFromWindow();
-			const authPath = base + 'authorization';
+			const authPath = base + 'authorization/';
+			const absAuth = (typeof window !== 'undefined' ? window.location.origin : '') + authPath;
 			const isAuthPage = (window.location.pathname || '').endsWith('/authorization') || (window.location.pathname || '').endsWith('/authorization/');
-			if (!isAuthPage) window.location.replace(authPath);
+			if (!isAuthPage) window.location.replace(absAuth);
 		} catch {}
 	}
 
