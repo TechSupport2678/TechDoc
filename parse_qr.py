@@ -79,8 +79,10 @@ def decode_qr_from_image(image_path: Path) -> List[str]:
     detector = cv2.QRCodeDetector()
     decoded_texts: List[str] = []
 
-    # Try multiple variants and rotations
-    for _name, variant in _generate_variants(cv2, image):
+    variants: List[Tuple[str, "object"]] = list(_generate_variants(cv2, image))
+
+    # Try multiple variants and rotations with OpenCV first
+    for _name, variant in variants:
         try:
             # Multi-code path
             try:
@@ -97,8 +99,36 @@ def decode_qr_from_image(image_path: Path) -> List[str]:
             if text:
                 return [text]
         except Exception:
-            # Continue trying other variants
             continue
+
+    # Fallback: pyzbar (ZBar), often robust for screenshots
+    try:
+        from pyzbar.pyzbar import decode as zbar_decode  # type: ignore
+        from PIL import Image  # type: ignore
+
+        results: List[str] = []
+        for _name, variant in variants:
+            try:
+                if len(getattr(variant, "shape", ())) == 2:
+                    # grayscale numpy array
+                    pil_img = Image.fromarray(variant)
+                else:
+                    # BGR -> RGB
+                    rgb = cv2.cvtColor(variant, cv2.COLOR_BGR2RGB)
+                    pil_img = Image.fromarray(rgb)
+
+                decoded = zbar_decode(pil_img)
+                if decoded:
+                    for d in decoded:
+                        data = d.data.decode("utf-8", errors="replace")
+                        if data:
+                            results.append(data)
+                    if results:
+                        return results
+            except Exception:
+                continue
+    except Exception:
+        pass
 
     return []
 
