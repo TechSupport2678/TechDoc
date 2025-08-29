@@ -5,6 +5,7 @@ const sidebars = {
 	docs: [
 		'introduction',
 		'access-and-configuration',
+		'ssh-key-setup',
 		'authorization',
 		{
 			type: 'category',
